@@ -1,0 +1,711 @@
+ ## 1\. What is a character in a video game?
+
+ A **character** is a distinct entity in a game that can:
+
+ - Have a name or identity
+- Have a visual appearance
+- Perform actions
+- Move or interact with the game world
+- Have abilities, strengths, or weaknesses
+- Have a role in the game's story or gameplay
+- Interact with the player or other characters
+
+ For example, in **Super Mario Bros.**, Mario is a character. He is recognizable as a particular individual, has abilities such as jumping, and interacts with the game environment.
+
+ A character does **not necessarily have to be human**.
+
+ A game character could be:
+
+ - 👨 Human — Mario, Arthur Morgan
+- 🧝 Fantasy creature — an elf or wizard
+- 🐭 Animal — Pikachu
+- 👾 Alien — an extraterrestrial creature
+- 🤖 Robot — a robotic protagonist
+- 👹 Monster — a boss or enemy
+- 🧱 Abstract/game entity — depending on the game's design
+
+---
+
+ ## 2\. The player character
+
+ The **player character** is the character whose actions are directly controlled by the player.
+
+ For example, in **Minecraft**, the player controls their avatar, commonly represented by Steve or Alex.
+
+ The player might control the character to:
+
+ > Walk → run → jump → attack → collect objects → talk to people → complete missions
+
+ The important idea is:
+
+ **Player → controls → player character → interacts with → game world**
+
+ So if you are playing a game and you press a button to make your character jump, that character is the **player character**.
+
+---
+
+ ## 3\. Character vs. avatar
+
+ These terms are related, but they aren't always identical.
+
+ ### Character
+
+ A **character** is an identifiable entity in the game.
+
+ For example:
+
+ > Lara Croft is a character.
+
+ She has a defined identity, appearance, personality, history, abilities, etc.
+
+ ### Avatar
+
+ An **avatar** is a representation of the player inside the game.
+
+ For example, in a game where you create your own person by choosing:
+
+ - Hair
+- Face
+- Clothes
+- Gender
+- Name
+- Body type
+
+ that created representation can be called your **avatar**.
+
+ So:
+
+ > **Avatar = representation of the player**
+
+ while:
+
+ > **Character = an entity/person/creature in the game**
+
+ Sometimes the player's avatar is also a fully developed character.
+
+---
+
+ # 4\. NPC — Non-Player Character
+
+ An **NPC** is a **Non-Player Character**.
+
+ It is a character that exists in the game but is **not directly controlled by the player**.
+
+ For example, imagine a role-playing game where you enter a village.
+
+ You might encounter:
+
+ - A shopkeeper
+- A blacksmith
+- A farmer
+- A guard
+- A doctor
+- A quest giver
+
+ These can all be NPCs.
+
+ The computer/game controls them.
+
+ For example:
+
+ > Player: "I want to buy a sword."
+
+ > Shopkeeper NPC: "This sword costs 500 gold."
+
+ The shopkeeper is a **character**, but not the **player character**.
+
+---
+
+ # 5\. Enemy characters
+
+ An enemy is also commonly a character.
+
+ For example, imagine a game with:
+
+ > Player character → fights → enemy character
+
+ The enemy may have:
+
+ - Health
+- Attack power
+- Movement
+- Special abilities
+- Artificial intelligence
+- Animations
+- Sounds
+- A particular appearance
+
+ For example, in **Pokémon**, Pokémon encountered in battle are characters/entities with their own abilities, statistics, and behaviors.
+
+ An enemy doesn't necessarily have to be an individual named person.
+
+ A game might have 50 identical monsters. Each individual monster can still be treated as a character/entity during gameplay.
+
+---
+
+ # 6\. Boss characters
+
+ A **boss** is a particularly important enemy, usually stronger or more significant than ordinary enemies.
+
+ For example:
+
+ > Player → defeats small enemies → progresses through level → encounters boss → boss fight
+
+ A boss may have:
+
+ - Much more health
+- Special attacks
+- Multiple phases
+- Unique animations
+- A distinctive appearance
+- Special music
+- A connection to the story
+
+ A boss is therefore also a type of game character.
+
+---
+
+ # 7\. Supporting characters
+
+ Games often have characters who aren't the main character but are important to the story.
+
+ These are sometimes called **supporting characters**.
+
+ For example, a story might contain:
+
+ - Main hero
+- Best friend
+- Mentor
+- Rival
+- Villain
+- Family member
+- Companion
+
+ The supporting character might accompany the player, provide information, or help during missions.
+
+---
+
+ # 8\. Main character / protagonist
+
+ The **protagonist** is the primary character around whom the story is centered.
+
+ In a story-driven game, the protagonist is often the character the player controls.
+
+ For example:
+
+ > Game story: A hero must save their kingdom.
+
+ The hero is likely the **protagonist**.
+
+ However, **protagonist** and **player character** are not always exactly the same thing.
+
+ A game can have:
+
+ > **Protagonist = main character in the story**
+
+ and
+
+ > **Player character = character controlled by the player**
+
+ Usually they're the same, but not necessarily.
+
+---
+
+ # 9\. Villain / antagonist
+
+ The **antagonist** is a character or force that opposes the protagonist.
+
+ In simple terms:
+
+ > **Protagonist:** "I want to achieve X."
+
+ > **Antagonist:** "I will stop you from achieving X."
+
+ For example, a game might have a hero trying to save a kingdom while a villain is trying to destroy or control it.
+
+ The antagonist doesn't always have to be an evil person. It can sometimes be:
+
+ - Another character
+- A group
+- An organization
+- A creature
+- Nature
+- A powerful system
+- Even the game environment itself
+
+---
+
+ # 10\. What makes something a "character"?
+
+ This is where the concept gets interesting.
+
+ Suppose a game contains a **tree**.
+
+ Is the tree a character?
+
+ Usually, **no**.
+
+ It's an **environmental object**.
+
+ Now suppose the tree:
+
+ - Has a face
+- Talks to the player
+- Has a name
+- Gives quests
+- Has a personality
+- Moves around
+
+ Then it could reasonably be considered a **character**.
+
+ So being visually represented on screen isn't enough.
+
+ A character usually has some combination of:
+
+ **Identity + behavior + agency \+ interaction + role**
+
+---
+
+ # 11\. Character statistics
+
+ In many games, a character has numerical properties called **stats**.
+
+ For example:
+
+ | Stat | Meaning |
+| --- | --- |
+| Health | How much damage the character can take |
+| Strength | Physical attack power |
+| Defense | Resistance to attacks |
+| Speed | How quickly the character moves/acts |
+| Intelligence | Mental/magical capability |
+| Mana | Resource used for abilities |
+| Level | Overall progression/progression rank |
+| Experience | Progress toward becoming stronger |
+
+For example:
+
+ > Character Level: 10\
+>  Health: 500\
+>  Strength: 75\
+>  Defense: 60\
+>  Speed: 40
+
+ These numbers allow the game to calculate what happens when characters interact.
+
+---
+
+ # 12\. Character abilities
+
+ Characters can also have **abilities**.
+
+ For example, a character might be able to:
+
+ - Jump
+- Run
+- Shoot
+- Punch
+- Heal
+- Fly
+- Cast magic
+- Become invisible
+- Build objects
+- Talk to NPCs
+- Drive vehicles
+
+ Different games use different terminology:
+
+ - Skills
+- Abilities
+- Powers
+- Moves
+- Spells
+- Attacks
+- Perks
+- Talents
+
+---
+
+ # 13\. Character progression
+
+ In many games, characters become stronger as the game progresses.
+
+ For example:
+
+ > Level 1 → Level 5 → Level 10 → Level 20
+
+ The character might gain:
+
+ - More health
+- Better weapons
+- New abilities
+- New skills
+- Better equipment
+- New appearances
+- New dialogue options
+
+ This is especially common in **role-playing games (RPGs)**.
+
+---
+
+ # 14\. Character customization
+
+ Some games allow the player to customize their character.
+
+ You might choose:
+
+ - Name
+- Face
+- Skin tone
+- Hair
+- Clothing
+- Armor
+- Gender
+- Voice
+- Body type
+- Weapons
+- Abilities
+
+ For example:
+
+ > Create Character → Choose appearance → Choose class → Choose skills → Enter game
+
+ The resulting character is often the player's **custom character** or **avatar**.
+
+---
+
+ # 15\. Character class
+
+ In many games, a character has a **class**, which describes their gameplay role.
+
+ For example:
+
+ ### Warrior
+
+ Strong physical attacks and defense.
+
+ ### Mage
+
+ Uses magic and spells.
+
+ ### Archer
+
+ Attacks from a distance.
+
+ ### Healer
+
+ Restores health and supports teammates.
+
+ ### Rogue
+
+ Fast, stealthy, and focused on critical attacks.
+
+ A character's class can determine:
+
+ > Weapons + abilities + statistics + gameplay style
+
+---
+
+ # 16\. Character animation
+
+ A game character isn't just a static picture.
+
+ Modern characters usually have animations for things such as:
+
+ - Walking
+- Running
+- Jumping
+- Falling
+- Attacking
+- Taking damage
+- Dying
+- Talking
+- Sitting
+- Climbing
+- Swimming
+
+ For example:
+
+ **Idle → Walk → Run → Jump → Land**
+
+ These animations make the character appear alive.
+
+---
+
+ # 17\. Character model
+
+ In a 3D game, the visible physical representation of a character is often called a **character model**.
+
+ For example:
+
+ > Character → 3D model → textures → animations → game behavior
+
+ The **model** is essentially the visual/3D representation.
+
+ But the model itself isn't necessarily the complete character.
+
+ A character can have:
+
+ - 3D model
+- Skeleton
+- Animations
+- Sounds
+- Statistics
+- AI
+- Abilities
+- Dialogue
+- Story information
+
+ Together, these create the game's character.
+
+---
+
+ # 18. Character AI
+
+ For characters controlled by the computer, the game may use **AI (artificial intelligence)** to determine what they do.
+
+ For example, an enemy might behave like:
+
+ > Detect player\
+>  ↓\
+>  Move toward player\
+>  ↓\
+>  Attack\
+>  ↓\
+>  Take damage\
+>  ↓\
+>  Retreat\
+>  ↓\
+>  Attack again
+
+ The character therefore isn't simply an animation.
+
+ The game has rules that determine its behavior.
+
+---
+
+ # 19\. Character personality
+
+ In story-driven games, characters can have personalities.
+
+ One character might be:
+
+ - Brave
+- Funny
+- Serious
+- Angry
+- Kind
+- Greedy
+- Intelligent
+- Cowardly
+- Loyal
+- Evil
+
+ This personality can affect dialogue and story decisions.
+
+ For example:
+
+ > Character A: "Let's fight!"
+
+ > Character B: "Wait. We should think about this first."
+
+ Both are characters, but they have different personalities.
+
+---
+
+ # 20\. Character development
+
+ In narrative games, **character development** means that a character changes over the course of the story.
+
+ For example:
+
+ At the beginning:
+
+ > Character is selfish and distrustful.
+
+ After experiencing important events:
+
+ > Character becomes loyal and willing to sacrifice themselves for others.
+
+ That change is **character development**.
+
+ This is similar to character development in movies and novels.
+
+---
+
+ # 21\. A character isn't necessarily a person
+
+ This is an important point.
+
+ The word **character** in gaming doesn't necessarily mean "human."
+
+ Consider a game where the protagonist is a:
+
+ - Cat 🐈
+- Dog 🐕
+- Robot 🤖
+- Dinosaur 🦖
+- Alien 👽
+- Pokémon
+- Ghost 👻
+- Monster
+- Vehicle with a personality
+
+ It can still be a **character**.
+
+ The important concept is that it functions as a distinct entity within the game's experience.
+
+---
+
+ # 22\. Character vs. object
+
+ This distinction is useful when learning game development.
+
+ Imagine a game containing:
+
+ **Characters**
+
+ - Player
+- Enemy
+- Shopkeeper
+- Companion
+
+ **Objects**
+
+ - Sword
+- Chair
+- Door
+- Treasure chest
+- Rock
+- Tree
+
+ The difference is usually **behavior and role**.
+
+ A sword might be something the player picks up.
+
+ A character might:
+
+ > See the player → make a decision → move → speak → attack → react.
+
+ However, modern games blur this distinction. A magical sword that talks, has a personality, and interacts with the player could itself be treated as a character.
+
+---
+
+ # 23\. Characters in multiplayer games
+
+ In multiplayer games, several players may control different characters.
+
+ For example:
+
+ > Player A → Character A\
+>  Player B → Character B\
+>  Player C → Character C\
+>  Player D → Character D
+
+ Each character may have different:
+
+ - Abilities
+- Weapons
+- Health
+- Movement
+- Appearance
+- Roles
+
+ In a team-based game, characters might be divided into roles such as:
+
+ > Tank + Damage Dealer + Support
+
+---
+
+ # 24\. Character selection
+
+ Many games begin with a **character selection** screen.
+
+ For example:
+
+ > Choose your character:
+
+ 1. Warrior
+2. Mage
+3. Archer
+4. Assassin
+
+ The player selects one, and the game loads that character's:
+
+ - Model
+- Abilities
+- Statistics
+- Animations
+- Equipment
+- Voice
+- Gameplay behavior
+
+---
+
+ # 25\. A useful mental model
+
+ Think of a game character as a combination of several layers:
+
+```
+                 GAME CHARACTER
+                       │
+        ┌──────────────┼──────────────┐
+        │              │              │
+     Appearance      Behavior       Identity
+        │              │              │
+     3D model        AI/controls    Name
+     Animation       Movement       Personality
+     Clothing        Attacks        Story
+     Effects         Abilities      Background
+        │              │              │
+        └──────────────┼──────────────┘
+                       │
+                  GAMEPLAY
+```
+
+ So when a game developer says **"character,"** they may be talking about much more than the picture you see on screen.
+
+---
+
+ ## 26\. Simple definition
+
+ If you want one definition to remember:
+
+ > **A video-game character is a distinct person, creature, or entity that exists in the game world and has a recognizable identity, appearance, behavior, abilities, or role.**
+
+ And there are several common types:
+
+ - **Player character** — controlled by the player
+- **NPC** — controlled by the game
+- **Enemy** — opposes the player
+- **Boss** — major/powerful enemy
+- **Protagonist** — central character in the story
+- **Antagonist** — character or force opposing the protagonist
+- **Companion** — character that assists the player
+- **Supporting character** — contributes to the story but isn't the main character
+- **Avatar** — representation of the player
+
+ ### The key distinction
+
+ **Character** answers:
+
+ > **"Who/what is this entity in the game?"**
+
+ **Player character** answers:
+
+ > **"Which character does the player control?"**
+
+ **NPC** answers:
+
+ > **"Which character does the game control?"**
+
+ **Enemy** answers:
+
+ > **"Which character opposes the player?"**
+
+ So, for example:
+
+ > **Mario is a character.**\
+>  **Mario is the player character when you control him.**\
+>  **A Goomba is an enemy character.**\
+>  **A shopkeeper can be an NPC.**

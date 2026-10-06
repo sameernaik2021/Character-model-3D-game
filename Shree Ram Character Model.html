@@ -1,0 +1,1133 @@
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shree Ram Character Model</title>
+
+<style>
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:
+        linear-gradient(
+            rgba(117, 177, 207, 0.35),
+            rgba(240, 222, 174, 0.2)
+        ),
+        #9bc7dc;
+    font-family: Arial, sans-serif;
+}
+
+/* =========================================================
+   SCENE
+========================================================= */
+
+.scene {
+    position: relative;
+    width: 520px;
+    height: 900px;
+    overflow: hidden;
+    perspective: 900px;
+}
+
+/* Temple-like background */
+
+.temple-bg {
+    position: absolute;
+    inset: 0;
+    background:
+        linear-gradient(
+            to bottom,
+            #9bc9df 0%,
+            #b9d6dc 55%,
+            #d8c8a0 55%,
+            #e6d8b6 100%
+        );
+}
+
+/* distant temple */
+
+.temple {
+    position: absolute;
+    left: 25px;
+    top: 120px;
+    width: 470px;
+    height: 500px;
+    opacity: .72;
+}
+
+.temple-main {
+    position: absolute;
+    left: 120px;
+    bottom: 80px;
+    width: 230px;
+    height: 300px;
+    background: #d8d0bb;
+    border: 3px solid #a99c7c;
+}
+
+.temple-tower {
+    position: absolute;
+    left: 160px;
+    top: 0;
+    width: 150px;
+    height: 270px;
+    background:
+        repeating-linear-gradient(
+            90deg,
+            #d4c9af 0 17px,
+            #c1b69c 18px 21px
+        );
+    clip-path: polygon(
+        50% 0,
+        66% 8%,
+        70% 18%,
+        80% 30%,
+        88% 45%,
+        100% 65%,
+        100% 100%,
+        0 100%,
+        0 65%,
+        12% 45%,
+        20% 30%,
+        30% 18%,
+        34% 8%
+    );
+}
+
+.temple-dome {
+    position: absolute;
+    bottom: 55px;
+    width: 95px;
+    height: 70px;
+    background: #d6c9aa;
+    border-radius: 100% 100% 0 0;
+    border: 3px solid #a89976;
+}
+
+.temple-dome.left {
+    left: 5px;
+}
+
+.temple-dome.right {
+    right: 5px;
+}
+
+/* Ground */
+
+.ground {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 310px;
+    background:
+        repeating-linear-gradient(
+            90deg,
+            transparent 0 48px,
+            rgba(130,110,76,.22) 49px 51px
+        ),
+        repeating-linear-gradient(
+            0deg,
+            #ded0aa 0 55px,
+            #c8b98f 56px 59px
+        );
+    transform: perspective(500px) rotateX(38deg);
+    transform-origin: bottom;
+}
+
+/* =========================================================
+   CHARACTER
+========================================================= */
+
+.character {
+    position: absolute;
+    left: 100px;
+    bottom: 42px;
+    width: 300px;
+    height: 790px;
+    transform-origin: 50% 100%;
+    animation: breathing 3s ease-in-out infinite;
+    z-index: 20;
+}
+
+/* =========================================================
+   HAIR / HEAD
+========================================================= */
+
+.head {
+    position: absolute;
+    left: 77px;
+    top: 78px;
+    width: 143px;
+    height: 174px;
+    background:
+        linear-gradient(
+            100deg,
+            #c7e2ed 0%,
+            #91bbce 42%,
+            #6e9eb4 100%
+        );
+    border: 3px solid #345d70;
+    border-radius: 48% 48% 45% 45%;
+    z-index: 9;
+    box-shadow:
+        inset -12px -5px 20px rgba(30,70,90,.18);
+}
+
+/* Long dark hair */
+
+.hair {
+    position: absolute;
+    left: 19px;
+    top: -18px;
+    width: 108px;
+    height: 93px;
+    background:
+        repeating-linear-gradient(
+            100deg,
+            #211b1c 0 9px,
+            #352a28 10px 15px
+        );
+    border-radius: 55% 55% 35% 35%;
+    z-index: 12;
+}
+
+.hair::before {
+    content: "";
+    position: absolute;
+    left: -18px;
+    top: 43px;
+    width: 32px;
+    height: 130px;
+    background: #211b1c;
+    border-radius: 50%;
+    transform: rotate(12deg);
+}
+
+.hair::after {
+    content: "";
+    position: absolute;
+    right: -14px;
+    top: 44px;
+    width: 30px;
+    height: 125px;
+    background: #211b1c;
+    border-radius: 50%;
+    transform: rotate(-9deg);
+}
+
+/* Top hair knot */
+
+.hair-knot {
+    position: absolute;
+    left: 39px;
+    top: -39px;
+    width: 50px;
+    height: 55px;
+    background: #20191a;
+    border-radius: 50% 50% 35% 35%;
+    z-index: 13;
+}
+
+.hair-knot::after {
+    content: "";
+    position: absolute;
+    left: 8px;
+    top: 6px;
+    width: 34px;
+    height: 39px;
+    border: 4px solid #4c3a36;
+    border-radius: 50%;
+}
+
+/* =========================================================
+   FACE
+========================================================= */
+
+.eyebrow {
+    position: absolute;
+    top: 76px;
+    width: 43px;
+    height: 8px;
+    border-top: 4px solid #32252a;
+    border-radius: 50%;
+    z-index: 15;
+}
+
+.eyebrow.left {
+    left: 19px;
+    transform: rotate(-5deg);
+}
+
+.eyebrow.right {
+    right: 19px;
+    transform: rotate(5deg);
+}
+
+.eye {
+    position: absolute;
+    top: 91px;
+    width: 34px;
+    height: 21px;
+    background: #f5fbff;
+    border-bottom: 4px solid #24333c;
+    border-radius: 50%;
+    z-index: 15;
+}
+
+.eye.left {
+    left: 21px;
+}
+
+.eye.right {
+    right: 21px;
+}
+
+.pupil {
+    position: absolute;
+    left: 11px;
+    top: 3px;
+    width: 10px;
+    height: 15px;
+    background: #172029;
+    border-radius: 50%;
+}
+
+.nose {
+    position: absolute;
+    left: 65px;
+    top: 107px;
+    width: 19px;
+    height: 39px;
+    border-right: 3px solid #527b8d;
+    border-bottom: 3px solid #527b8d;
+    border-radius: 0 0 14px 0;
+    z-index: 15;
+}
+
+.mouth {
+    position: absolute;
+    left: 48px;
+    top: 145px;
+    width: 48px;
+    height: 16px;
+    border-bottom: 3px solid #4d2930;
+    border-radius: 50%;
+    z-index: 15;
+}
+
+/* Tilak */
+
+.tilak {
+    position: absolute;
+    left: 61px;
+    top: 46px;
+    width: 23px;
+    height: 44px;
+    z-index: 16;
+}
+
+.tilak::before,
+.tilak::after {
+    content: "";
+    position: absolute;
+    width: 7px;
+    height: 38px;
+    background: #f7eee0;
+    border-radius: 10px;
+}
+
+.tilak::before {
+    left: 1px;
+    transform: rotate(7deg);
+}
+
+.tilak::after {
+    right: 1px;
+    transform: rotate(-7deg);
+}
+
+.tilak-center {
+    position: absolute;
+    left: 8px;
+    top: 14px;
+    width: 7px;
+    height: 28px;
+    background: #c7342c;
+    border-radius: 50%;
+}
+
+/* =========================================================
+   EARRINGS
+========================================================= */
+
+.earring {
+    position: absolute;
+    top: 145px;
+    width: 25px;
+    height: 42px;
+    background: #dba82f;
+    border: 4px solid #80580e;
+    border-radius: 50%;
+    z-index: 14;
+}
+
+.earring.left {
+    left: 63px;
+}
+
+.earring.right {
+    right: 63px;
+}
+
+/* =========================================================
+   NECK
+========================================================= */
+
+.neck {
+    position: absolute;
+    left: 120px;
+    top: 242px;
+    width: 62px;
+    height: 70px;
+    background: #9fc9d9;
+    border: 3px solid #416f81;
+    border-radius: 25px;
+    z-index: 5;
+}
+
+/* =========================================================
+   TORSO
+========================================================= */
+
+.torso {
+    position: absolute;
+    left: 52px;
+    top: 275px;
+    width: 205px;
+    height: 245px;
+    background:
+        linear-gradient(
+            90deg,
+            #9fcbdc,
+            #b8dce7 45%,
+            #7faabd
+        );
+    border: 4px solid #426e7d;
+    border-radius: 45% 45% 20% 20%;
+    z-index: 5;
+    box-shadow: inset -18px 0 20px rgba(30,80,100,.15);
+}
+
+/* Chest muscles */
+
+.pec {
+    position: absolute;
+    top: 318px;
+    width: 75px;
+    height: 54px;
+    border-bottom: 4px solid rgba(53,94,108,.5);
+    border-radius: 50%;
+    z-index: 8;
+}
+
+.pec.left {
+    left: 73px;
+}
+
+.pec.right {
+    left: 157px;
+}
+
+/* Abdomen */
+
+.abs {
+    position: absolute;
+    width: 45px;
+    height: 48px;
+    border: 3px solid rgba(58,98,110,.28);
+    border-radius: 45%;
+    z-index: 8;
+}
+
+.abs.a1 {
+    left: 103px;
+    top: 375px;
+}
+
+.abs.a2 {
+    left: 155px;
+    top: 375px;
+}
+
+.abs.a3 {
+    left: 103px;
+    top: 425px;
+}
+
+.abs.a4 {
+    left: 155px;
+    top: 425px;
+}
+
+/* =========================================================
+   JEWELRY
+========================================================= */
+
+.long-necklace {
+    position: absolute;
+    left: 89px;
+    top: 270px;
+    width: 145px;
+    height: 145px;
+    border: 4px solid #4e3217;
+    border-top-color: transparent;
+    border-radius: 50%;
+    z-index: 12;
+}
+
+.necklace-gold {
+    position: absolute;
+    left: 102px;
+    top: 284px;
+    width: 120px;
+    height: 80px;
+    border-bottom: 8px solid #d99d25;
+    border-radius: 50%;
+    z-index: 13;
+}
+
+.necklace-bead {
+    position: absolute;
+    width: 13px;
+    height: 13px;
+    background: #dca62f;
+    border: 2px solid #76500e;
+    border-radius: 50%;
+}
+
+.necklace-bead:nth-child(1) {
+    left: 6px;
+    top: 4px;
+}
+
+.necklace-bead:nth-child(2) {
+    left: 31px;
+    top: 25px;
+}
+
+.necklace-bead:nth-child(3) {
+    left: 54px;
+    top: 34px;
+}
+
+.necklace-bead:nth-child(4) {
+    left: 78px;
+    top: 25px;
+}
+
+.necklace-bead:nth-child(5) {
+    left: 103px;
+    top: 4px;
+}
+
+/* =========================================================
+   ARMS
+========================================================= */
+
+.arm {
+    position: absolute;
+    top: 300px;
+    width: 54px;
+    height: 190px;
+    background:
+        linear-gradient(
+            90deg,
+            #9cc6d5,
+            #b9dce7,
+            #789faf
+        );
+    border: 4px solid #426e7d;
+    border-radius: 35px;
+    z-index: 4;
+}
+
+.arm.left {
+    left: 17px;
+    transform: rotate(12deg);
+}
+
+.arm.right {
+    right: 14px;
+    transform: rotate(-13deg);
+}
+
+/* Hands */
+
+.hand {
+    position: absolute;
+    bottom: -27px;
+    left: -4px;
+    width: 57px;
+    height: 57px;
+    background: #a9d1df;
+    border: 4px solid #426e7d;
+    border-radius: 50%;
+}
+
+/* =========================================================
+   GOLD ARM GUARDS
+========================================================= */
+
+.guard {
+    position: absolute;
+    width: 59px;
+    height: 80px;
+    background:
+        repeating-linear-gradient(
+            135deg,
+            #b97815 0 8px,
+            #edc24a 9px 17px,
+            #9a6412 18px 21px
+        );
+    border: 4px solid #70470c;
+    border-radius: 16px;
+    z-index: 10;
+}
+
+.guard.left {
+    left: 7px;
+    top: 370px;
+    transform: rotate(12deg);
+}
+
+.guard.right {
+    right: 4px;
+    top: 370px;
+    transform: rotate(-13deg);
+}
+
+/* =========================================================
+   DHOTI
+========================================================= */
+
+.dhoti {
+    position: absolute;
+    left: 62px;
+    top: 488px;
+    width: 185px;
+    height: 200px;
+    background:
+        linear-gradient(
+            90deg,
+            #e7a719,
+            #f4bf2a 45%,
+            #c98713
+        );
+    border: 4px solid #76500e;
+    border-radius: 25px 25px 50px 50px;
+    z-index: 6;
+}
+
+/* Front cloth */
+
+.front-cloth {
+    position: absolute;
+    left: 135px;
+    top: 488px;
+    width: 76px;
+    height: 250px;
+    background:
+        linear-gradient(
+            90deg,
+            #e18c19,
+            #f0b52a,
+            #c87711
+        );
+    border: 4px solid #71460b;
+    clip-path: polygon(0 0,100% 0,82% 100%,20% 100%);
+    z-index: 10;
+}
+
+/* Red/orange sash */
+
+.sash {
+    position: absolute;
+    left: 57px;
+    top: 475px;
+    width: 185px;
+    height: 85px;
+    background:
+        linear-gradient(
+            90deg,
+            #7f2317,
+            #c53b1f,
+            #ec7626,
+            #9a2819
+        );
+    border: 4px solid #662318;
+    clip-path: polygon(
+        0 0,
+        100% 0,
+        90% 100%,
+        68% 72%,
+        48% 100%,
+        30% 68%,
+        10% 100%
+    );
+    z-index: 11;
+}
+
+/* Waist belt */
+
+.waist-belt {
+    position: absolute;
+    left: 57px;
+    top: 466px;
+    width: 190px;
+    height: 40px;
+    background: #75450d;
+    border: 5px solid #4d2e0a;
+    z-index: 13;
+}
+
+.waist-gold {
+    position: absolute;
+    left: 68px;
+    top: -8px;
+    width: 53px;
+    height: 48px;
+    background:
+        radial-gradient(circle, #ffe06a 0 30%, #c18717 32% 100%);
+    border: 5px solid #81530c;
+    border-radius: 50%;
+}
+
+/* =========================================================
+   LEGS
+========================================================= */
+
+.leg {
+    position: absolute;
+    top: 650px;
+    width: 73px;
+    height: 145px;
+    background:
+        linear-gradient(
+            90deg,
+            #e7a719,
+            #f5c02e,
+            #c98212
+        );
+    border: 4px solid #76500e;
+    border-radius: 25px 25px 35px 35px;
+    z-index: 5;
+}
+
+.leg.left {
+    left: 70px;
+}
+
+.leg.right {
+    right: 70px;
+}
+
+/* Gold shin guards */
+
+.shin-guard {
+    position: absolute;
+    top: 680px;
+    width: 73px;
+    height: 92px;
+    background:
+        repeating-linear-gradient(
+            135deg,
+            #a66a0e 0 8px,
+            #edc14b 9px 18px,
+            #b17712 19px 23px
+        );
+    border: 4px solid #75490a;
+    border-radius: 15px;
+    z-index: 9;
+}
+
+.shin-guard.left {
+    left: 70px;
+}
+
+.shin-guard.right {
+    right: 70px;
+}
+
+/* Feet */
+
+.foot {
+    position: absolute;
+    top: 765px;
+    width: 85px;
+    height: 38px;
+    background:
+        linear-gradient(
+            90deg,
+            #9fcbdc,
+            #c3e0e8,
+            #83aebf
+        );
+    border: 4px solid #426e7d;
+    border-radius: 45% 45% 35% 35%;
+    z-index: 8;
+}
+
+.foot.left {
+    left: 64px;
+}
+
+.foot.right {
+    right: 64px;
+}
+
+/* =========================================================
+   BOW - LARGE CURVED BOW LIKE REFERENCE
+========================================================= */
+
+.bow {
+    position: absolute;
+    right: -76px;
+    top: 245px;
+    width: 125px;
+    height: 530px;
+    border: 10px solid #9c6419;
+    border-left: 0;
+    border-radius: 0 65% 65% 0;
+    transform: rotate(1deg);
+    z-index: 2;
+    box-shadow:
+        inset -4px 0 4px rgba(255,210,80,.35);
+}
+
+.bow::before {
+    content: "";
+    position: absolute;
+    right: -5px;
+    top: -8px;
+    width: 25px;
+    height: 25px;
+    border: 5px solid #d7a42d;
+    border-radius: 50%;
+}
+
+.bow::after {
+    content: "";
+    position: absolute;
+    right: -5px;
+    bottom: -8px;
+    width: 25px;
+    height: 25px;
+    border: 5px solid #d7a42d;
+    border-radius: 50%;
+}
+
+/* Bow string */
+
+.bow-string {
+    position: absolute;
+    right: 4px;
+    top: 0;
+    width: 3px;
+    height: 526px;
+    background: #60411e;
+}
+
+/* Bow handle */
+
+.bow-handle {
+    position: absolute;
+    right: -8px;
+    top: 220px;
+    width: 28px;
+    height: 92px;
+    background: #dca32b;
+    border: 4px solid #754a0d;
+    border-radius: 12px;
+    z-index: 3;
+}
+
+/* =========================================================
+   ARROW QUIVER
+========================================================= */
+
+.quiver {
+    position: absolute;
+    left: 25px;
+    top: 310px;
+    width: 65px;
+    height: 160px;
+    background:
+        linear-gradient(
+            90deg,
+            #74431c,
+            #b36a25,
+            #643717
+        );
+    border: 4px solid #4d2b15;
+    border-radius: 10px 10px 25px 25px;
+    transform: rotate(-18deg);
+    z-index: 3;
+}
+
+.arrow {
+    position: absolute;
+    width: 5px;
+    height: 190px;
+    background: #65411d;
+    transform-origin: bottom;
+}
+
+.arrow.a1 {
+    left: 16px;
+    top: -105px;
+    transform: rotate(-12deg);
+}
+
+.arrow.a2 {
+    left: 29px;
+    top: -112px;
+    transform: rotate(-5deg);
+}
+
+.arrow.a3 {
+    left: 42px;
+    top: -103px;
+    transform: rotate(3deg);
+}
+
+.arrow-head {
+    position: absolute;
+    top: -10px;
+    left: -6px;
+    width: 17px;
+    height: 20px;
+    background: #d5a42b;
+    clip-path: polygon(50% 0,100% 100%,50% 72%,0 100%);
+}
+
+/* =========================================================
+   ANIMATION
+========================================================= */
+
+@keyframes breathing {
+    0%,100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-5px);
+    }
+}
+
+.jump {
+    animation: heroicPose .9s ease-out;
+}
+
+@keyframes heroicPose {
+    0% {
+        transform: translateY(0) scale(1) rotate(0);
+    }
+
+    30% {
+        transform: translateY(-25px) scale(1.02) rotate(-1deg);
+    }
+
+    65% {
+        transform: translateY(-8px) scale(1.01) rotate(1deg);
+    }
+
+    100% {
+        transform: translateY(0) scale(1) rotate(0);
+    }
+}
+
+/* =========================================================
+   LABEL
+========================================================= */
+
+.label {
+    position: absolute;
+    left: 50%;
+    bottom: 8px;
+    transform: translateX(-50%);
+    padding: 9px 22px;
+    background: rgba(255,255,255,.92);
+    color: #7b321d;
+    border-radius: 24px;
+    font-weight: bold;
+    z-index: 50;
+    white-space: nowrap;
+    box-shadow: 0 5px 15px rgba(0,0,0,.18);
+}
+</style>
+</head>
+
+<body>
+
+<div class="scene">
+
+    <div class="temple-bg"></div>
+
+    <div class="temple">
+        <div class="temple-tower"></div>
+        <div class="temple-main"></div>
+        <div class="temple-dome left"></div>
+        <div class="temple-dome right"></div>
+    </div>
+
+    <div class="ground"></div>
+
+    <div class="character" id="ram">
+
+        <!-- Large curved bow -->
+        <div class="bow">
+            <div class="bow-string"></div>
+            <div class="bow-handle"></div>
+        </div>
+
+        <!-- Quiver -->
+        <div class="quiver">
+            <div class="arrow a1"><div class="arrow-head"></div></div>
+            <div class="arrow a2"><div class="arrow-head"></div></div>
+            <div class="arrow a3"><div class="arrow-head"></div></div>
+        </div>
+
+        <!-- Head -->
+        <div class="head">
+
+            <div class="hair"></div>
+            <div class="hair-knot"></div>
+
+            <div class="tilak">
+                <div class="tilak-center"></div>
+            </div>
+
+            <div class="eyebrow left"></div>
+            <div class="eyebrow right"></div>
+
+            <div class="eye left">
+                <div class="pupil"></div>
+            </div>
+
+            <div class="eye right">
+                <div class="pupil"></div>
+            </div>
+
+            <div class="nose"></div>
+            <div class="mouth"></div>
+
+        </div>
+
+        <!-- Earrings -->
+        <div class="earring left"></div>
+        <div class="earring right"></div>
+
+        <!-- Neck -->
+        <div class="neck"></div>
+
+        <!-- Torso -->
+        <div class="torso"></div>
+
+        <!-- Chest -->
+        <div class="pec left"></div>
+        <div class="pec right"></div>
+
+        <!-- Abs -->
+        <div class="abs a1"></div>
+        <div class="abs a2"></div>
+        <div class="abs a3"></div>
+        <div class="abs a4"></div>
+
+        <!-- Long necklace -->
+        <div class="long-necklace"></div>
+
+        <!-- Gold necklace -->
+        <div class="necklace-gold">
+            <div class="necklace-bead"></div>
+            <div class="necklace-bead"></div>
+            <div class="necklace-bead"></div>
+            <div class="necklace-bead"></div>
+            <div class="necklace-bead"></div>
+        </div>
+
+        <!-- Arms -->
+        <div class="arm left">
+            <div class="hand"></div>
+        </div>
+
+        <div class="arm right">
+            <div class="hand"></div>
+        </div>
+
+        <!-- Arm guards -->
+        <div class="guard left"></div>
+        <div class="guard right"></div>
+
+        <!-- Dhoti -->
+        <div class="dhoti"></div>
+
+        <!-- Sash -->
+        <div class="sash"></div>
+
+        <!-- Waist belt -->
+        <div class="waist-belt">
+            <div class="waist-gold"></div>
+        </div>
+
+        <!-- Front cloth -->
+        <div class="front-cloth"></div>
+
+        <!-- Legs -->
+        <div class="leg left"></div>
+        <div class="leg right"></div>
+
+        <!-- Shin guards -->
+        <div class="shin-guard left"></div>
+        <div class="shin-guard right"></div>
+
+        <!-- Feet -->
+        <div class="foot left"></div>
+        <div class="foot right"></div>
+
+    </div>
+
+    <div class="label">Shree Ram — Character Model</div>
+
+</div>
+
+<script>
+const ram = document.getElementById("ram");
+
+ram.addEventListener("click", () => {
+    ram.classList.remove("jump");
+
+    // Restart animation
+    void ram.offsetWidth;
+
+    ram.classList.add("jump");
+});
+</script>
+
+</body>
+</html>
+```
